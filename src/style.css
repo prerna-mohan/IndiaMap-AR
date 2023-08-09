@@ -18,20 +18,19 @@
  
   .annotation {
     background-color: #ffffffcc;
-    position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    padding: 0px 16px 0px;
+    padding: 0px 12px 0px;
     font-family: Futura, Helvetica Neue, sans-serif;
-    font-size: 12.5px;
+    font-size: 12px;
     cursor: pointer;
     font-weight: 700;
     color: #4a4b4d;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 5px;
+    height: 30px;
+    border-radius: 15px;
+    float: right;
     border: 1px solid #DADCE0;
   }
 
@@ -63,10 +62,10 @@
     background-position: 12px 50%;
     background-color: #fff;
     position: absolute;
-    right: 4%;
+    right: 2vw;
     /* transform: translateX(90%); */
     white-space: nowrap;
-    top: 3%;
+    top: 10vh;
     padding: 0px 16px 0px 40px;
     font-family: Roboto Regular, Helvetica Neue, sans-serif;
     font-size: 14px;

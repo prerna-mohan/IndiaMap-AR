@@ -10,16 +10,15 @@
 
 <body>
   <div class="flex-col flex justify-between items-center grow"></div>
-  <model-viewer style="height: 90vh; width: 100%;" id="mv" src="map.glb" loading="eager" ar-scale="${100}${100}${100}"
-    camera-controls camera-orbit="-5deg 75deg 3.5m" camera-target="0m 0.6m 0m" alt="3D flag" shadow-intensity="1"
+  <model-viewer style="height: 100vh; width: 100%;" id="mv" src="map.glb" loading="eager" scale="1 1 1"
+    camera-controls alt="3D flag" shadow-intensity="1"
     ios-src="map.usdz" animation-name="Animation" ar ar-modes="webxr scene-viewer quick-look">
     <button slot="ar-button" id="ar-button">
       View in your space
     </button>
     <div class="thanks">
-      The Incidence of Uncontrolled
-      Diabetes in Indian Population,Despite of being on Anti Diabetic Therapy
-      <br>
+      Chronic Diabetic population - 101 millionPrediabetes - 136 millionThe incidence of uncontrolled diabetes is high among the Indian population despite anti-diabetic therapy
+      <br><br>
       <button class="annotation">Pledge now</button>
     </div>
   </model-viewer>
