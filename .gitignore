@@ -1,0 +1,11 @@
+node_modules
+dist
+stats.json
+yarn-error.log
+./.vscode
+./.vercel
+.vercel
+public
+bundler/webpack.dev.js
+package-lock.json
+package.json
