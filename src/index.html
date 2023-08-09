@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Map AR</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <div class="flex-col flex justify-between items-center grow"></div>
+  <model-viewer style="height: 90vh; width: 100%;" id="mv" src="map.glb" loading="eager" ar-scale="${100}${100}${100}"
+    camera-controls camera-orbit="-5deg 75deg 3.5m" camera-target="0m 0.6m 0m" alt="3D flag" shadow-intensity="1"
+    ios-src="map.usdz" animation-name="Animation" ar ar-modes="webxr scene-viewer quick-look">
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+    <div class="thanks">
+      The Incidence of Uncontrolled
+      Diabetes in Indian Population,Despite of being on Anti Diabetic Therapy
+      <br>
+      <button class="annotation">Pledge now</button>
+    </div>
+  </model-viewer>
+  </div>
+</body>
+
+</html>

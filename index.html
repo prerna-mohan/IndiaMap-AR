@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>WebXR App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <audio id="sound" src="https://cdn.glitch.global/e0225f21-4ee5-4e57-b950-0b2be7774394/Tone.mp3?v=1690874287541"
+    type="audio/mp3">
+  </audio>
+  <div class="flex-col flex justify-between items-center grow"></div>
+  <model-viewer style="height: 90vh; width: 100%;" 
+    id="model-viewer"
+    src="https://cdn.glitch.global/e0225f21-4ee5-4e57-b950-0b2be7774394/flag.glb?v=1690915274225"
+    loading="eager"
+    camera-controls
+    alt="3D flag"
+    ar ar-scale="${100}${100}${100}"
+    shadow-intensity="1" 
+    ios-src="https://cdn.glitch.global/e0225f21-4ee5-4e57-b950-0b2be7774394/flagfromgltf.usdz?v=1691048386538"
+    animation-name="Animation"
+    ar ar-modes="webxr scene-viewer quick-look">
+    <!-- shadow-intensity="1" camera-controls touch-action="pan-y" -->
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+    <button class="annotation">Hoist Flag</button>
+    <div class="info">Tap the button to hoist the flag</button>
+  </model-viewer>
+  </div>
+</body>
+
+</html>
