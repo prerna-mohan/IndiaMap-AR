@@ -6,6 +6,6 @@ yarn-error.log
 ./.vercel
 .vercel
 public
-bundler/webpack.dev.js
+bundler
 package-lock.json
 package.json
