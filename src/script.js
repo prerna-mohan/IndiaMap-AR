@@ -1,7 +1,11 @@
 import "./style.css";
+import {Howl, Howler} from 'howler';
 
 let hoisted = false;
-let sound = new Audio('bgm.mp3');
+let sound = new Howl({
+    src: ['bgm.mp3'],
+    loop: true
+  });
 const modelViewer = document.getElementById('mv');
 const annotation = modelViewer.querySelector('.annotation');
 const info = modelViewer.querySelector('.info')
@@ -11,11 +15,6 @@ modelViewer.addEventListener('model-visibility', function () {
     if (iOS()) {
         startAnimations();
     }
-    sound.play().catch(e => {
-        window.addEventListener('click', () => {
-           sound.play()
-        })
-     })
 })
 
 modelViewer.addEventListener('ar-status', (event) => {
@@ -27,12 +26,7 @@ modelViewer.addEventListener('ar-status', (event) => {
 function startAnimations(){
     hoisted = true;
     modelViewer.play({ repetitions: 1 });
-    // sound.loop = true;
-    // sound.play().catch(e => {
-    //     window.addEventListener('click', () => {
-    //        sound.play()
-    //     })
-    //  })
+    sound.play();
     setTimeout(() => {
         thanks.style.display = 'block'
     }, 19000)
