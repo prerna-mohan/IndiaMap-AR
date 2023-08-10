@@ -8,7 +8,6 @@ let sound = new Howl({
   });
 const modelViewer = document.getElementById('mv');
 const annotation = modelViewer.querySelector('.annotation');
-const info = modelViewer.querySelector('.info')
 const thanks = modelViewer.querySelector('.thanks')
 
 modelViewer.addEventListener('model-visibility', function () {
@@ -29,7 +28,10 @@ function startAnimations(){
     sound.play();
     setTimeout(() => {
         thanks.style.display = 'block'
-    }, 19000)
+    }, 7000)
+    setTimeout(() => {
+        annotation.style.display = 'block'
+    }, 20000)
 }
 
 modelViewer.addEventListener('load', () => {

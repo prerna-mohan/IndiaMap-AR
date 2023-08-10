@@ -17,6 +17,7 @@
   }
  
   .annotation {
+    display: none;
     background-color: #ffffffcc;
     left: 50%;
     top: 50%;
