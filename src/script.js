@@ -31,7 +31,7 @@ function startAnimations(){
     }, 7000)
     setTimeout(() => {
         annotation.style.display = 'block'
-    }, 20000)
+    }, 23000)
 }
 
 modelViewer.addEventListener('load', () => {
