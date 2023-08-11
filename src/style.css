@@ -17,7 +17,7 @@
   }
  
   .annotation {
-    /* display: none; */
+    display: none;
     background-color: #ffffff;
     position: absolute;
     left: 50%;
