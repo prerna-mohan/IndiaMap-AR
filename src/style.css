@@ -19,8 +19,9 @@
   .annotation {
     display: none;
     background-color: #ffffffcc;
+    position: absolute;
     left: 50%;
-    top: 50%;
+    bottom: 8vh;
     transform: translateX(-50%);
     white-space: nowrap;
     padding: 0px 12px 0px;
@@ -31,11 +32,10 @@
     color: #4a4b4d;
     height: 30px;
     border-radius: 15px;
-    float: right;
     border: 1px solid #DADCE0;
   }
 
-  .thanks {
+  .text1 {
     background-color: #ebebeb;
     position: absolute;
     bottom: 10vh;
