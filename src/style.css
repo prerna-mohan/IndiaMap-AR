@@ -17,22 +17,22 @@
   }
  
   .annotation {
-    display: none;
-    background-color: #ffffffcc;
+    /* display: none; */
+    background-color: #ffffff;
     position: absolute;
     left: 50%;
-    bottom: 8vh;
+    bottom: 10vh;
     transform: translateX(-50%);
     white-space: nowrap;
-    padding: 0px 12px 0px;
+    padding: 0px 22px 0px;
     font-family: Futura, Helvetica Neue, sans-serif;
     font-size: 12px;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 800;
     color: #4a4b4d;
-    height: 30px;
-    border-radius: 15px;
-    border: 1px solid #DADCE0;
+    height: 60px;
+    border-radius: 28px;
+    border: 2px solid #DADCE0;
   }
 
   .text1 {
