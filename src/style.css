@@ -35,7 +35,7 @@
     border: 2px solid #DADCE0;
   }
 
-  .text1 {
+  .text1, .text2 {
     background-color: #ebebeb;
     position: absolute;
     bottom: 10vh;
