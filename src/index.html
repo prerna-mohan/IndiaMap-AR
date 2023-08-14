@@ -11,7 +11,7 @@
 <body>
   <div class="flex-col flex justify-between items-center grow"></div>
   <model-viewer style="height: 100vh; width: 100%;" id="mv" src="map.glb" loading="eager" camera-controls
-    camera-orbit="0 0 -10m" alt="3D flag" shadow-intensity="1" animation-name="All Animations" ios-src="map.usdz" ar
+    camera-orbit="0 0 0m" alt="3D flag" shadow-intensity="1" animation-name="All Animations" ios-src="map.usdz" ar
     ar-modes="webxr scene-viewer quick-look">
     <button slot="ar-button" id="ar-button">
       View in your space
@@ -24,7 +24,7 @@
     <div class="text2">
       Kindly Take a Pledge today to save our nation from the adverse effects of diabetes!
     </div>
-    <button class="annotation">Pledge now</button>
+    <button class="annotation" onclick="window.open('http://43.205.96.128/sitapride','_blank')">Pledge now</button>
   </model-viewer>
   </div>
 </body>

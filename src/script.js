@@ -45,10 +45,6 @@ modelViewer.addEventListener('load', () => {
     console.log('model loaded')
 })
 
-annotation.addEventListener('click', (e) => {
-    console.log('clicked', e.target)
-})
-
 function iOS() {
     return [
       'iPad Simulator',
