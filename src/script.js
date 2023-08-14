@@ -38,7 +38,7 @@ function startAnimations(){
         text1.style.display = 'none'
         annotation.style.display = 'block'
         text2.style.display = 'block';
-    }, 34000)
+    }, 33000)
 }
 
 modelViewer.addEventListener('load', () => {
